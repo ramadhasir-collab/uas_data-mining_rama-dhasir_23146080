@@ -128,7 +128,7 @@ streamlit run app.py
 
 # Link GitHub Repository
 
-https://github.com/RamaDhasir/UAS_Data-Mining_Rama-Dhasir_23146080
+https://github.com/RamaDhasir/UAS_Data-Mining_Rama-Dhasir_23146080.
 
 ---
 
