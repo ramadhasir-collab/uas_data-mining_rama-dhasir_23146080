@@ -1,83 +1,105 @@
 # Proyek Data Mining
 
-## Implementasi Supervised dan Unsupervised Learning Menggunakan Streamlit
+# Implementasi Supervised dan Unsupervised Learning Menggunakan Streamlit
 
-**Nama:** Rama Dhasir  
-**NIM:** 23146080  
-**Mata Kuliah:** Data Mining (SIF304)  
-**Program Studi:** Sistem Informasi  
-**Universitas:** Universitas Abulyatama Aceh  
+**Nama:** Rama Dhasir
+**NIM:** 23146080
+**Mata Kuliah:** Data Mining (SIF304)
+**Program Studi:** Sistem Informasi
+**Universitas:** Universitas Abulyatama Aceh
 **Tahun Ajaran:** Genap 2025/2026
 
 ---
 
-## Deskripsi Proyek
+# Deskripsi Proyek
 
-Proyek ini merupakan implementasi metode **Supervised Learning** dan **Unsupervised Learning** dalam satu aplikasi berbasis **Streamlit**. Aplikasi dikembangkan sebagai tugas Ujian Akhir Semester (UAS) Mata Kuliah Data Mining.
+Proyek ini merupakan implementasi metode **Supervised Learning** dan **Unsupervised Learning** dalam sebuah aplikasi berbasis **Streamlit** sebagai pemenuhan tugas Ujian Akhir Semester (UAS) pada mata kuliah Data Mining.
 
-Aplikasi terdiri dari dua bagian utama, yaitu klasifikasi diabetes menggunakan tiga algoritma machine learning dan clustering lokasi gerai kopi menggunakan algoritma K-Means. Seluruh model diimplementasikan dalam satu aplikasi web yang dapat digunakan untuk melakukan prediksi maupun analisis data secara interaktif.
+Aplikasi ini menggabungkan dua metode utama dalam data mining, yaitu klasifikasi risiko diabetes menggunakan beberapa algoritma machine learning dan analisis clustering lokasi gerai kopi menggunakan algoritma K-Means.
+
+Seluruh proses mulai dari pemrosesan data, implementasi model, evaluasi, hingga visualisasi hasil analisis dikembangkan dalam satu aplikasi web interaktif sehingga pengguna dapat melakukan prediksi maupun eksplorasi data secara langsung.
 
 ---
 
 # Fitur Aplikasi
 
-## 1. Prediksi Risiko Diabetes (Klasifikasi)
+## 1. Prediksi Risiko Diabetes (Supervised Learning)
 
-Halaman ini digunakan untuk memprediksi apakah seorang pasien berisiko mengidap diabetes berdasarkan data medis yang dimasukkan oleh pengguna.
+Fitur ini digunakan untuk melakukan prediksi risiko diabetes berdasarkan data medis yang dimasukkan oleh pengguna.
 
-### Algoritma yang digunakan
+### Algoritma yang Digunakan
 
-- K-Nearest Neighbor (KNN)
-- Naïve Bayes
-- Decision Tree
+* K-Nearest Neighbor (KNN)
+* Naïve Bayes
+* Decision Tree
 
-### Fitur
+### Fitur yang Tersedia
 
-- Menampilkan metrik Accuracy
-- Menampilkan Precision
-- Menampilkan Recall
-- Menampilkan F1-Score
-- Menampilkan Confusion Matrix
-- Prediksi status diabetes pasien berdasarkan data input
+* Input data pasien untuk prediksi diabetes
+* Perbandingan hasil prediksi dari tiga algoritma
+* Menampilkan nilai Accuracy
+* Menampilkan Precision
+* Menampilkan Recall
+* Menampilkan F1-Score
+* Menampilkan Confusion Matrix
+* Prediksi status risiko diabetes berdasarkan data pengguna
 
 ---
 
-## 2. Analisis Klaster Lokasi Gerai Kopi (K-Means)
+## 2. Analisis Klaster Lokasi Gerai Kopi (Unsupervised Learning)
 
-Halaman ini digunakan untuk mengelompokkan lokasi gerai kopi berdasarkan koordinat geografis menggunakan algoritma K-Means.
+Fitur ini digunakan untuk melakukan pengelompokan lokasi gerai kopi berdasarkan koordinat geografis menggunakan algoritma K-Means.
 
-### Fitur
+### Fitur yang Tersedia
 
-- Visualisasi Scatter Plot
-- Visualisasi Centroid K-Means
-- Menampilkan jumlah anggota setiap cluster
-- Menentukan cluster dengan jumlah anggota paling sedikit sebagai Zona Sepi
-- Prediksi cluster lokasi baru
-- Menampilkan status Zona Ramai atau Zona Sepi
+* Visualisasi hasil clustering menggunakan Scatter Plot
+* Menampilkan posisi centroid setiap cluster
+* Menampilkan jumlah anggota pada setiap cluster
+* Mengidentifikasi cluster dengan anggota paling sedikit sebagai Zona Sepi
+* Melakukan prediksi cluster untuk lokasi baru
+* Menentukan status lokasi berdasarkan hasil clustering:
+
+  * Zona Ramai
+  * Zona Sepi
 
 ---
 
 # Dataset
 
-Dataset yang digunakan dalam proyek ini terdiri dari:
+Dataset yang digunakan dalam proyek ini terdiri dari dua jenis, yaitu:
 
-1. **Pima Indians Diabetes Dataset**
-   - Digunakan untuk membangun model klasifikasi diabetes.
+## 1. Pima Indians Diabetes Dataset
 
-2. **Dataset Lokasi Gerai Kopi**
-   - Digunakan untuk melakukan analisis clustering menggunakan algoritma K-Means.
+Dataset ini digunakan untuk membangun model klasifikasi diabetes.
+
+Atribut yang digunakan meliputi data medis seperti:
+
+* Pregnancies
+* Glucose
+* Blood Pressure
+* Skin Thickness
+* Insulin
+* BMI
+* Diabetes Pedigree Function
+* Age
+
+## 2. Dataset Lokasi Gerai Kopi
+
+Dataset ini digunakan untuk melakukan analisis clustering lokasi menggunakan algoritma K-Means berdasarkan koordinat geografis.
 
 ---
 
 # Teknologi yang Digunakan
 
-- Python
-- Streamlit
-- Pandas
-- Scikit-learn
-- Joblib
-- Matplotlib
-- Seaborn
+Proyek ini dikembangkan menggunakan beberapa teknologi berikut:
+
+* **Python** sebagai bahasa pemrograman utama
+* **Streamlit** sebagai framework pembuatan aplikasi web interaktif
+* **Pandas** untuk pengolahan data
+* **Scikit-learn** untuk implementasi algoritma machine learning
+* **Joblib** untuk penyimpanan dan pemanggilan model
+* **Matplotlib** untuk visualisasi data
+* **Seaborn** untuk visualisasi statistik
 
 ---
 
@@ -103,22 +125,22 @@ Dataset yang digunakan dalam proyek ini terdiri dari:
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/RamaDhasir/UAS_Data-Mining_Rama-Dhasir_23146080.git
+git clone https://github.com/ramadhasir-collab/uas_data-mining_rama-dhasir_23146080.git
 ```
 
 ## 2. Masuk ke Folder Project
 
 ```bash
-cd UAS_Data-Mining_Rama-Dhasir_23146080
+cd uas_data-mining_rama-dhasir_23146080
 ```
 
-## 3. Install Library
+## 3. Install Library yang Dibutuhkan
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4. Jalankan Streamlit
+## 4. Jalankan Aplikasi Streamlit
 
 ```bash
 streamlit run app.py
@@ -126,27 +148,38 @@ streamlit run app.py
 
 ---
 
-# Link GitHub Repository
+# Link Repository GitHub
 
-https://github.com/RamaDhasir/UAS_Data-Mining_Rama-Dhasir_23146080
+Repository project dapat diakses melalui:
+
+https://github.com/ramadhasir-collab/uas_data-mining_rama-dhasir_23146080
 
 ---
 
 # Link Aplikasi Streamlit
 
-https://uasdata-miningrama-dhasir23146080-w2a9bwblvlwsxeqht4j9h3.streamlit.app/
+Aplikasi yang telah berhasil di-deploy dapat diakses melalui:
+
+https://uasdata-miningrama-dhasir23146080-vtgtqzfnf344ggqqw6zfu4.streamlit.app/
 
 ---
 
 # Hasil Implementasi
 
-Aplikasi berhasil mengimplementasikan dua pendekatan data mining dalam satu sistem berbasis web. Pada bagian klasifikasi, pengguna dapat membandingkan hasil prediksi menggunakan tiga algoritma machine learning serta melihat metrik evaluasi model. Pada bagian clustering, pengguna dapat melakukan analisis persebaran lokasi gerai kopi, melihat visualisasi hasil clustering, serta memprediksi apakah suatu lokasi baru termasuk ke dalam zona ramai atau zona sepi berdasarkan hasil analisis K-Means.
+Aplikasi berhasil mengimplementasikan dua pendekatan utama dalam data mining, yaitu **Supervised Learning** dan **Unsupervised Learning** dalam satu sistem berbasis web.
+
+Pada bagian klasifikasi diabetes, pengguna dapat melakukan prediksi risiko diabetes menggunakan tiga algoritma machine learning, yaitu KNN, Naïve Bayes, dan Decision Tree. Selain melakukan prediksi, aplikasi juga menyediakan evaluasi performa model menggunakan beberapa metrik seperti Accuracy, Precision, Recall, F1-Score, serta Confusion Matrix.
+
+Pada bagian clustering lokasi gerai kopi, pengguna dapat melihat hasil pengelompokan lokasi berdasarkan algoritma K-Means melalui visualisasi grafik. Sistem juga mampu melakukan prediksi terhadap lokasi baru dan menentukan apakah lokasi tersebut termasuk dalam kategori Zona Ramai atau Zona Sepi berdasarkan hasil analisis cluster.
+
+Dengan adanya aplikasi ini, metode data mining dapat diterapkan secara langsung untuk membantu proses prediksi, analisis pola data, dan pengambilan keputusan berbasis data.
 
 ---
 
 # Penulis
 
-**Rama Dhasir**  
-NIM: **23146080**  
-Program Studi Sistem Informasi  
+**Rama Dhasir**
+NIM: **23146080**
+
+Program Studi Sistem Informasi
 Universitas Abulyatama Aceh
